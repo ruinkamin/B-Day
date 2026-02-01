@@ -148,22 +148,27 @@ body {
 }
 
 .tabs {
-    display: flex;
-    justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .tab {
-    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background: #122538;
     border: none;
     padding: 12px 20px;
     border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    color: #03365b;
+    color: #ECEBE9;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -172,13 +177,13 @@ body {
 }
 
 .tab:hover {
-    background: rgba(255, 255, 255, 0.9);
+    background: #2676B9;
     transform: translateY(-3px);
 }
 
 .tab.active {
-    background: white;
-    color: #122538;
+    background: #62B5E5;
+    color: #09284A;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -296,6 +301,14 @@ button.focus {
 .song-icon {
     font-size: 24px;
     color: #03365B;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .song-info h4 {

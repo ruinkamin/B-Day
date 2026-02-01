@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const passwordInput = document.getElementById("passwordInput");
     const submitPassword = document.getElementById("submitPassword");
 
-    const SECRET = 'babycakes'; 
+    const SECRET = 'vibrance'; //яскравість, енергію, святковий настрій і особливість
     const WELCOME_DURATION = 10000; 
 
     welcomeScreen.classList.add("show");

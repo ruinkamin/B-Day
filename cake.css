@@ -100,7 +100,7 @@
     }
 
     to {
-        transform: translateY(280px);
+        transform: translateY(300px);
     }
 
     /* подберите значение по нужной дистанции */
@@ -138,6 +138,88 @@
 
     h1 {
         font-size: 1.4em;
+    }
+}
+
+/* Mobile Responsiveness */
+
+@media screen and (max-width: 768px) {
+    @keyframes cake-drop {
+            from {
+                transform: translateY(0);
+            }
+    
+            to {
+                transform: translateY(250px);
+            }
+    
+            /* подберите значение по нужной дистанции */
+        }
+    #cake {
+        width: 150px !important;
+        height: 350px !important;
+        margin: -5em auto 0 auto;
+    }
+
+    .cake-box {
+        height: 300px;
+    }
+
+    .cake {
+        width: 4px;
+        height: 25px;
+        margin-left: -2px;
+        margin-top: -6px;
+    }
+
+    .fuego {
+        width: 5px;
+        height: 14px;
+        margin-left: -2.5px;
+    }
+
+    .welcome-message {
+        font-size: 32px !important;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    @keyframes cake-drop {
+            from {
+                transform: translateY(0);
+            }
+    
+            to {
+                transform: translateY(230px);
+            }
+    
+            /* подберите значение по нужной дистанции */
+        }
+
+    #cake {
+        width: 120px !important;
+        height: 280px !important;
+        margin: -4em auto 0 auto;
+    }
+
+    .cake {
+        width: 3px;
+        height: 20px;
+        margin-left: -1.5px;
+        margin-top: -5px;
+    }
+
+    .fuego {
+        width: 4px;
+        height: 10px;
+        margin-left: -2px;
+        top: -15px;
+    }
+
+    .welcome-message {
+        font-size: 24px !important;
+        padding: 15px;
     }
 }
 

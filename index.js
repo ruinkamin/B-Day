@@ -102,17 +102,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Expandable love letter
 
-    const loveLetter = document.getElementById("loveLetter");
-    loveLetter.addEventListener("click", function() {
-        this.classList.toggle("expanded");
-    });
+    // const loveLetter = document.getElementById("loveLetter");
+    // loveLetter.addEventListener("click", function() {
+    //     this.classList.toggle("expanded");
+    // });
 
     // Add floating decorative elements
     function addFloatingElements() {
         for (let i = 0; i < 15; i++) {
             const heart = document.createElement("div");
             heart.classList.add("heart");
-            heart.innerHTML = "❤️";
+            heart.innerHTML = "😊";
+            heart.innerHTML = "😍";
+            heart.innerHTML = "🌸";
+            heart.innerHTML = "💖";
+            heart.innerHTML = "🪩";
             heart.style.left = Math.random() * 100 + "%";
             heart.style.top = Math.random() * 100 + "%";
             heart.style.animationDelay = Math.random() * 5 + "s";

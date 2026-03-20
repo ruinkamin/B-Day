@@ -288,6 +288,10 @@ button.focus {
 
 /* Music Tab */
 
+.titel {
+    margin: 10px;
+}
+
 .song {
     background: #eaf7ff;
     padding: 15px;
